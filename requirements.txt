@@ -1,0 +1,9 @@
+numpy
+pandas
+rasterio
+Pillow
+opencv-python
+torch == 2.0.0
+tqdm
+transformers
+scikit-learn
