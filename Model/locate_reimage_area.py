@@ -1,4 +1,3 @@
-###  删除内部重复框
 import os
 import cv2
 import torch
@@ -9,11 +8,10 @@ from transformers import AutoImageProcessor, AutoModel
 import csv
 from sklearn.cluster import DBSCAN
 
-
-TEMPLATE_PATH = ["../data/template/cloud_1.jpg","..data/template/cloud_2.jpg"]
-IMAGE_DIR = "../data/images_cloud_jpg"
+TEMPLATE_PATH = ["../dataset/template/cloud_1.jpg","../dataset/template/cloud_2.jpg"]
+IMAGE_DIR = "../dataset/cloud_images"
 OUTPUT_DIR = "../results/reimage_locate_imges"
-OUTPUT_CSV = os.path.join(OUTPUT_DIR, "cloud_bboxes.csv")
+OUTPUT_CSV = os.path.join(OUTPUT_DIR, "../resluts/reimage_region.csv")
 MODEL_NAME = "../saved_model" 
 
 WINDOW_SIZE = 224
