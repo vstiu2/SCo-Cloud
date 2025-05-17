@@ -9,7 +9,7 @@ from transformers import AutoImageProcessor, AutoModel
 import csv
 from sklearn.cluster import DBSCAN
 
-# ========== 配置 ==========
+
 TEMPLATE_PATH = ["../data/template/cloud_1.jpg","..data/template/cloud_2.jpg"]
 IMAGE_DIR = "../data/images_cloud_jpg"
 OUTPUT_DIR = "../results/reimage_locate_imges"
